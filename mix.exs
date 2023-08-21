@@ -5,7 +5,7 @@ defmodule Casex.MixProject do
     [
       app: :casex,
       version: "0.4.2",
-      elixir: "~> 1.7",
+      elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -29,8 +29,8 @@ defmodule Casex.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_doc, "~> 0.21", only: :dev, runtime: false},
-      {:recase, "~> 0.6"},
+      {:ex_doc, "~> 0.30", only: :dev, runtime: false},
+      {:recase, "~> 0.7"},
       {:jason, "~> 1.2"},
       {:plug, "~> 1.10", optional: true}
     ]
